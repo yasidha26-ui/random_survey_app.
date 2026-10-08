@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Survey App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <!-- Start screen -->
+    <section id="start-screen">
+      <h1>📋 Online Survey</h1>
+      <p>You will get <strong>5 random questions</strong> from our question bank. Pick one answer for each.</p>
+      <button id="start-btn">Start Survey</button>
+    </section>
+
+    <!-- Question screen -->
+    <section id="question-screen" class="hidden">
+      <div class="progress"><div id="progress-bar"></div></div>
+      <p id="counter"></p>
+      <h2 id="question-text"></h2>
+      <div id="options"></div>
+      <button id="next-btn" disabled>Next</button>
+    </section>
+
+    <!-- Result screen -->
+    <section id="result-screen" class="hidden">
+      <h2>✅ Thank you for completing the survey!</h2>
+      <p>Here are your responses:</p>
+      <ul id="summary"></ul>
+      <p id="total-count"></p>
+      <button id="restart-btn">Take Again (new random questions)</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
